@@ -21,4 +21,5 @@ microservice:
     endpoints:
       endpoint:
         uri: http://VACINATION-CENTRE-SERVICE/vaccinationcentre/add
-password:{cipher}2517f8059de6b2c0332caab3aa5528acb1f21547260ebdf914e25974893cf6c1
+encrypted: 
+  property:{cipher}2517f8059de6b2c0332caab3aa5528acb1f21547260ebdf914e25974893cf6c1
