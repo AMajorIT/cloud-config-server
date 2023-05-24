@@ -4,7 +4,7 @@ spring:
   application:
     name: CONFIG-SERVER  
 encrypted:
-  property: {cipher}5547fb13f432f8978898f7167ad0bd9c94ed28c6de74dc147c619ce569912577
+  property: {cipher}2517f8059de6b2c0332caab3aa5528acb1f21547260ebdf914e25974893cf6c1
 eureka:
   client:
     register-with-eureka: true
