@@ -1,26 +1,9 @@
-spring:
-  profiles:
-    active: dev
-  application:
-    name: CONFIG-SERVER
-eureka:
-  client:
-    register-with-eureka: true
-    fetch-registry: true
-    service-url:
-      defaultzone: http://localhost:8761/eureka/
-  instance:
-    hostname: localhost
-
-microservice:
-  citizen-service:
-    endpoints:
-      endpoint:
-        uri: http://CITIZEN-UPDATED-SERVICE/citizen/id/
-  vaccination-service:
-    endpoints:
-      endpoint:
-        uri: http://VACINATION-CENTRE-SERVICE/vaccinationcentre/add
-  encrypted: 
-    property:
-      password:{cipher}2517f8059de6b2c0332caab3aa5528acb1f21547260ebdf914e25974893cf6c1
+spring.profiles.active:dev
+spring.application.name:CONFIG-SERVER
+eureka.client.register-with-eureka:true
+eureka.client.fetch-registry:true
+eureka.client.service-url.defaultzone:http://localhost:8761/eureka/
+eureka.instance.hostname:localhost
+microservice.citizen-service.endpoints.endpoint.uri:http://CITIZEN-UPDATED-SERVICE/citizen/id/
+microservice.vaccination-service.endpoints.endpoint.uri:http://VACINATION-CENTRE-SERVICE/vaccinationcentre/add
+microservice.encrypted.property.password:{cipher}2517f8059de6b2c0332caab3aa5528acb1f21547260ebdf914e25974893cf6c1
