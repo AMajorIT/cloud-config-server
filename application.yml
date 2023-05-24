@@ -3,8 +3,7 @@ spring:
     active: dev
   application:
     name: CONFIG-SERVER  
-encrypted:
-  property: {cipher}2517f8059de6b2c0332caab3aa5528acb1f21547260ebdf914e25974893cf6c1
+password: {cipher}2517f8059de6b2c0332caab3aa5528acb1f21547260ebdf914e25974893cf6c1
 eureka:
   client:
     register-with-eureka: true
