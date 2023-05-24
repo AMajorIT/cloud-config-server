@@ -1,19 +1,25 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: CONFIG-SERVER  
+encrypted:
+  property: {cipher}5547fb13f432f8978898f7167ad0bd9c94ed28c6de74dc147c619ce569912577
 eureka:
   client:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://localhost:8761/eureka/
+      defaultzone: http://localhost:8761/eureka/
   instance:
     hostname: localhost
-    
-    
+
 microservice:
-  payment-service:
+  citizen-service:
     endpoints:
       endpoint:
-        uri: http://PAYMENT-SERVICE/payment/doPayment
-  order-service:
+        uri: http://CITIZEN-UPDATED-SERVICE/citizen/id/
+  vaccination-service:
     endpoints:
       endpoint:
-        uri: http://ORDER-SERVICE/order/bookOrder
+        uri: http://VACINATION-CENTRE-SERVICE/vaccinationcentre/add
