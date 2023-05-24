@@ -2,8 +2,7 @@ spring:
   profiles:
     active: dev
   application:
-    name: CONFIG-SERVER  
-password: {cipher}2517f8059de6b2c0332caab3aa5528acb1f21547260ebdf914e25974893cf6c1
+    name: CONFIG-SERVER
 eureka:
   client:
     register-with-eureka: true
@@ -22,3 +21,5 @@ microservice:
     endpoints:
       endpoint:
         uri: http://VACINATION-CENTRE-SERVICE/vaccinationcentre/add
+encrypted: 
+  property:{cipher}2517f8059de6b2c0332caab3aa5528acb1f21547260ebdf914e25974893cf6c1
